@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link href="estilo.css" rel="stylesheet" type="text/css" />
+	<title>comida</title>
+	<script>
+function toggleText(bruno) {
+    var x = document.getElementById(bruno);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+window.onload = function() {
+    var images = document.querySelectorAll('#slideshow img');
+    var current = 0;
+
+    function changeImage() {
+        images[current].classList.remove('active');
+        current = (current + 1) % images.length;
+        images[current].classList.add('active');
+    }
+
+    setInterval(changeImage, 1500); 
+}
+</script>
+</head>
+<body  background="img/deportes.jpg">
+<style>
+    a {
+			color: #000000
+			}
+		
+			body {
+			font: 15px arial, helvetica, sans-serif;
+		}
+        
+		caption a {
+			font: 50px arial, helvetica, sans-serif;
+			display: block;
+			width: 250px;
+			padding: 25px;
+			margin: 25px auto;
+			background: white;
+			box-shadow: 0 0 5px 0 rgba(63,31,0,.5);
+			border-radius: 10px;
+			text-align: center;
+			text-decoration: none;
+			-webkit-transition: .4s;
+			transition: .4s;
+		}
+	
+		caption a:hover {
+			-webkit-transform: rotate(-10deg) scale(2);
+			transform: rotate(-10deg) scale(2);
+		}
+    .resaltado {
+        color: blue; /* Cambia el color del texto a azul */
+    }
+	  #slideshow {
+            position: relative;
+            width: 500px; 
+            height: 300px; 
+            overflow: hidden;
+        }
+        #slideshow img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        #slideshow img.active {
+            opacity: 1;
+        }
+	</style>
+	<br>
+	<table border="0" width="100%" text-align="center">
+<caption>	
+		<a href="https://www.youtube.com/watch?v=YExFY2k4Of8" target="blank">DEPORTE!</a>
+	
+</caption>
+    <tr>
+	<td width="70%">
+	<ul>
+	<li>
+	<h2>
+ <a href="javascript:void(0);" onclick="toggleText('miTexto')">DEPORTES FAVORITOS</a>
+ </h2>
+<div id="miTexto" style="display:none;">
+<p>
+    <ol>
+	<li>
+	Parkour: El parkour requiere saltar, trepar, correr, rodar, balancearse, caminar en cuatro patas y cualquier otro tipo de movimiento que demande la situación. Quienes lo practican (los llamados traceurs) deben combinar fuerza, velocidad, agilidad, coordinación, control y abundante creatividad.
+	</li>
+	<p>
+	<li>
+	Calistenia: Es un sistema de ejercicios físicos en los que se utiliza el propio peso corporal, para fortalecer los diferentes grupos musculares. Esta sirve para aumentar la resistencia, la fuerza muscular, el estado de ánimo, la velocidad, para quemar grasas, aumentar los niveles de flexibilidad y para corregir la postura corporal y el equilibrio.
+</li>
+	<p>
+	<li>
+	Tricking: El tricking se define como un arte marcial acrobático. Aquellos que lo practican, conocidos también como “trickers”, realizan increíbles combinaciones de saltos, giros, acrobacias y patadas en el aire
+	</li>
+</ol>
+<p>
+<img src="img/file-20190205-86213-ckszxs.jpg"> <img src="img/Guia-de-entrenamiento-de-Calistenia-P1-que-es-calistenia-y-para-que-sirve.jpg">
+<br>
+<center> <img src="img/35771437390_1f66f615e2_o.jpg"></center>
+</div>
+</li>
+<p>
+<li>
+<h2>
+ <a href="javascript:void(0);" onclick="toggleText('fun')">BEST TRICKS</a> </p>
+  </h2>
+ <div id="fun" style="display:none;">
+    <p>    
+<ol>
+	<li>
+	<a href="https://www.youtube.com/watch?v=FhXvFjpdwjc" target="blank"><span class="resaltado">9 backs seguidos</a>: Esta es una hazaña que ha marcado mucho estos últimos años ya que se ha batido el record de mayor cantidad de backs en el aire con 9, conseguido por Ernest Brenchley una auténtica locura.
+	</li>
+	<p>
+	<li>
+	<a href="https://www.youtube.com/watch?v=AwG7IfX_e1s" target="blank"><span class="resaltado">MANPOWER</a>: Este es n salto icónico en el parkour, donde se salta de un tejado a otro con una altura de 4m y una distancia de 6m entre uno y otro, situado en Francia, este salto se descubrió entorno al 1997 y tras el paso de los años se han ido implementando variantes como el gainer, front, side... una auténtica locura 	</li>
+	<p>
+	<li>
+	<a href="https://www.youtube.com/watch?v=s8hL9vEaxrg" target="blank"><span class="resaltado">25 escaleras a front</a>: Domtomato uno de los grandes referentes del parkour y las acrobacias, saltó en 2018 25 escaleras haciendo un mortal hacia delante, incríble.
+	</li>
+</ol>
+<p>
+<img src="img/maxres2.jpg"> <img src="img/images (2).jpg"> 
+<br>
+<img src="img/descarga.jpg">
+</p>
+</div>
+<p>
+<li>
+<h2>
+ <a href="javascript:void(0);" onclick="toggleText('kebab')">MEJORES ZONAS</a> </p>
+  </h2>
+ <div id="kebab" style="display:none;">
+    <p>    
+<ol>
+	<li>
+	Azca: Las superficies pulidas de AZCA, junto a Nuevos Ministerios, son a cualquier hora del día el escenario sobre el que muchos jóvenes bailan, practican con su skate o hacen parkour.
+	</li>
+	<p>
+	<li>
+	La zona de parkour consiste en una serie de troncos situados en el parque de Madrid Río, cuyo nombre es El Esqueleto. Están colocados irregularmente y a distintas alturas, lo que nos deja una zona perfecta para practicar parkour en Madrid.
+	</li>
+</ol>
+</p>
+<p>
+  <a href="https://maps.app.goo.gl/sLGrCHbU3kzXcLjz6" target="blank"><img id="myImage" src="img/nuevos-1570542053.jpg" alt="azca" 
+     onmouseover="this.src = 'img/mqdefault.jpg'" onmouseout="this.src = 'img/nuevos-1570542053.jpg'" /></a>
+    
+	 <a href="https://maps.app.goo.gl/AXJuE6N128KxSMvRA" target="blank"><img id="troncos" src="img/Mejores_Sitios_Parkour_Madrid_Esqueleto.jpg" alt="troncos" 
+     onmouseover="this.src = 'img/madrid-rio-esqueleto.jpg'" onmouseout="this.src = 'img/Mejores_Sitios_Parkour_Madrid_Esqueleto.jpg'" /></a> 
+</div>
+</li>
+<p>
+<li>
+<h2>
+ <a href="javascript:void(0);" onclick="toggleText('dieta')">ESTILOS DE LA CALISTENIA</a> </p>
+  </h2>
+ <div id="dieta" style="display:none;">
+   <ol>
+	<li>
+	Básicos: Existen cuatro ejercicios de calistenia conocidos comúnmente como “básicos”, los cuales son: las dominadas en barra, los fondos en paralelas, las flexiones de brazos y los remos australianos.
+	</li>
+	<p>
+	<li>
+	Freestyle: Llamamos freestyle o estilo libre a la ejecución de diferentes habilidades, ejercicios o piruetas en una coreografía diseñada para demostrar tu fuerza, habilidad, agilidad, equilibrio, destreza etc. Esta coreografía se compone de: Ejercicios dinámicos: giros, piruetas, vueltas, cambios de dirección etc.
+	</li>
+	<p>
+	<li>
+	Estáticos: Son ejercicios bastante más avanzados que consisten en mantener una determinada posición corporal durante un intervalo de tiempo. Los ejercicios estáticos para calistenia son bastante complejos y requieren de una gran fuerza muscular.
+	</li>
+</ol>
+<div id="slideshow">
+    <img src="img/Aumentar-Dominadas.jpg" class="active" alt="Imagen 1">
+    <img src="img/fondos-1599813660.jpg" alt="Imagen 2">
+    <img src="img/images (1).jpg" alt="Imagen 3">
+    <img src="img/Australian-pull-up.jpg" alt="Imagen 4">
+</div>
+<p>
+   <img src="img/Manana-calistenia-playa-Getares_1706540446_163400539_1024x576.jpg">   <img src="img/Full-Planche-Yerai.jpg">  
+
+
+</div>
+</li>
+</ul>
+	</td>
+	<td>
+	
+	</td>
+	</tr>
+	</table>
+</body>
+</html>

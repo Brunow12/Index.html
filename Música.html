@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link href="estilo.css" rel="stylesheet" type="text/css" />
+	<title>comida</title>
+	<script>
+function toggleText(bruno) {
+    var x = document.getElementById(bruno);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+window.onload = function() {
+    var images = document.querySelectorAll('#slideshow img');
+    var current = 0;
+
+    function changeImage() {
+        images[current].classList.remove('active');
+        current = (current + 1) % images.length;
+        images[current].classList.add('active');
+    }
+
+    setInterval(changeImage, 1500); 
+}
+</script>
+</head>
+<body  background="img/Musica-power-point-1024x768.jpg">
+<style>
+    a {
+			color: #000000
+			}
+		
+			body {
+			font: 15px arial, helvetica, sans-serif;
+		}
+        
+		caption a {
+			font: 50px arial, helvetica, sans-serif;
+			display: block;
+			width: 250px;
+			padding: 25px;
+			margin: 25px auto;
+			background: white;
+			box-shadow: 0 0 5px 0 rgba(63,31,0,.5);
+			border-radius: 10px;
+			text-align: center;
+			text-decoration: none;
+			-webkit-transition: .4s;
+			transition: .4s;
+		}
+	
+		caption a:hover {
+			-webkit-transform: rotate(-10deg) scale(2);
+			transform: rotate(-10deg) scale(2);
+		}
+
+	  #slideshow {
+            position: relative;
+            width: 300px; 
+            height: 200px; 
+            overflow: hidden;
+        }
+        #slideshow img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        #slideshow img.active {
+            opacity: 1;
+        }
+	</style>
+	<br>
+	<table border="0" width="100%" text-align="center">
+<caption>	
+		<a href="https://open.spotify.com/playlist/4IOxQMNjjfnq2YoFKt9DuI?si=2331df0784304282" target="blank">MÚSICA!</a>
+	
+</caption>
+    <tr>
+	<td width="70%">
+	<h2>LA INFLUENCIA DE LA MÚSICA</h2>
+	<p>
+	La música (del griego: μουσική [τέχνη] - mousikē [téchnē], «el arte de las musas») es, según la definición tradicional del término, el arte de organizar sensible y lógicamente una combinación coherente de sonidos y silencios respetando los principios fundamentales de la melodía, la armonía y el ritmo.
+	<p>
+	Según estudios realizados, la influencia de la música en nuestra mente es muy poderosa ya que las notas musicales “generan” energía. Así lo demuestra un experimento realizado en la facultad de psicología de la Benemérita Universidad Autónoma de Puebla, en México por el profesor Roberto Valderrama Hernández. El problema viene cuando esta energía no puede gastarse realizando actividad física. En ese sentido, la “música fuerte” es magnífica para situaciones que exijan conductas enérgicas o competitivas.<br>
+	La música fortalece el aprendizaje y la memoria, regula las hormonas relacionadas con el estrés, permite evocar experiencias y recuerdos, incide sobre los latidos, la presión arterial y el pulso y modula la velocidad de las ondas cerebrales.
+<p><h2>
+IMPORTANCIA DE LA MÚSICA EN LA SOCIEDAD</h2>
+<p>
+La música y la sociedad siempre han estado íntimamente relacionadas. La música refleja y crea condiciones sociales, incluidos los factores que facilitan o impiden las transformaciones en la sociedad. Por ejemplo, ahora todos los tipos de música están disponibles para la mayoría de las personas, las 24 horas del día. La música es un medio muy poderoso y en algunas sociedades se ha incluso intentado controlar su uso: es poderoso a nivel del grupo social porque facilita la comunicación, más allá de las palabras, permite compartir sentimientos y significado.
+<p>
+	</td>
+	<td>
+	</td>
+	</tr>
+	<table border="0" width="60%" text-align="center">
+	<tr>
+	<td><h2>
+GRUPOS FAVORITOS</h2>
+<p>
+<ul>
+<li>Green day</li>
+<li>Simple plan</li>
+<li>The offspring</li>
+<li>blink-182</li>
+<li>All Time Low</li>
+<li>Guns N'Roses</li>
+<li>AC/DC</li>
+<li>La pegatina</li>
+</ul>
+ </td>
+ <td>
+ <div id="slideshow">
+    <img src="img/8803d7ec675006ca7c23d244b7ff0104.jpg" class="active" alt="Imagen 1">
+    <img src="img/81RNiDCbQ8L._UF894,1000_QL80_.jpg" alt="Imagen 2">
+    <img src="img/811dCDMX6hL._SL1500_-e1605340002981.jpg" alt="Imagen 3">
+    <img src="img/71VjFFfuJ4L._UF894,1000_QL80_.jpg" alt="Imagen 4">
+	<img src="img/71qCdmlVzgL._UF894,1000_QL80_.jpg" alt="Imagen 5">
+    <img src="img/61mDXL-VhjL._AC_UF894,1000_QL80_.jpg" alt="Imagen 6">
+    <img src="img/91NuHgWC6cL._UF894,1000_QL80_DpWeblab_.jpg" alt="Imagen 7">
+    <img src="img/98f9e523eed606de1eb6466b26dce105.953x953x1.jpg" alt="Imagen 8">
+</div>
+ </td>
+	</tr>
+	<tr>
+	<td> </td>
+	</tr>
+	</table>
+</body>
+</html>
